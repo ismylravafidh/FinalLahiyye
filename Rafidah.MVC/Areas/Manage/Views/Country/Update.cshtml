@@ -1,0 +1,13 @@
+﻿@using Rafidah.Business.ViewModels.Country
+@model CountryUpdateVm
+<div class="container">
+    <h1>Update Country</h1>
+    <form method="post">
+        <div class="mb-3">
+            <label asp-for="CountryName" class="form-label">Name</label>
+            <input asp-for="CountryName" type="text" class="form-control">
+            <span asp-validation-for="CountryName" style="color:red"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

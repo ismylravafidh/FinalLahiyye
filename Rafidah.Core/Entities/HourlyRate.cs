@@ -1,0 +1,15 @@
+﻿using Rafidah.Core.Entities.Common;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Rafidah.Core.Entities
+{
+    public class HourlyRate:BaseEntity
+    {
+        public string Hourly {  get; set; }
+        public List<AppUser> Users { get; set; }
+    }
+}

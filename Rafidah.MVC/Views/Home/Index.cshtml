@@ -1,0 +1,966 @@
+﻿    <!-- Home Banner Style V1 -->
+    <section class="hero-home13 overflow-hidden">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-7">
+                    <div class="home13-hero-content">
+                        @if (!User.Identity.IsAuthenticated)
+                        {
+                            <a class="d-inline-block tag animate-up-1 mb15 text-white" asp-action="Register" asp-controller="Account">Get Started</a>
+                        }
+                        else
+                        {
+                            <a href="page-become-seller.html"><span class="d-inline-block tag animate-up-1 mb15 text-white">Become a Seller</span></a>
+                        }
+                        <h1 class="animate-up-1 mb25">Hire the best freelancers <br class="d-none d-xl-block">for any job, online.</h1>
+                        <p class="text animate-up-2">Work with talented people at the most affordable price to get the most <br class="d-none d-lg-block">out of your time and cost</p>
+                        <div class="advance-search-tab bgc-white p10 bdrs4-sm bdrs12 banner-btn position-relative zi1 animate-up-3 mt30">
+                            <div class="row">
+                                <div class="col-md-5 col-lg-6 col-xl-6">
+                                    <div class="advance-search-field mb10-sm bdrr1 bdrn-sm">
+                                        <form class="form-search position-relative">
+                                            <div class="box-search">
+                                                <span class="icon fas fa-search"></span>
+                                                <input class="form-control" type="text" name="search" placeholder="What are you looking for?">
+                                                <div class="search-suggestions">
+                                                    <h6 class="fz14 ml30 mt25 mb-3">Popular Search</h6>
+                                                    <div class="box-suggestions">
+                                                        <ul class="px-0 m-0 pb-4">
+                                                            <li>
+                                                                <div class="info-product">
+                                                                    <div class="item_title">mobile app development</div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="info-product">
+                                                                    <div class="item_title">mobile app builder</div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="info-product">
+                                                                    <div class="item_title">mobile legends</div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="info-product">
+                                                                    <div class="item_title">mobile app ui ux design</div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="info-product">
+                                                                    <div class="item_title">mobile game app development</div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="info-product">
+                                                                    <div class="item_title">mobile app design</div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-4 col-xl-4">
+                                    <div class="bselect-style1">
+                                        <select class="selectpicker" data-width="100%">
+                                            <option>Choose Category</option>
+                                            <option data-tokens="Graphics&Design">Graphics & Design</option>
+                                            <option data-tokens="DigitlMarketing">Digital Marketing</option>
+                                            <option data-tokens="Writing&Translation">Writing & Translation</option>
+                                            <option data-tokens="Video&Animation">Video & Animation</option>
+                                            <option data-tokens="Music&Audio">Music & Audio</option>
+                                            <option data-tokens="Programming&Tech">Programming & Tech</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-lg-2 col-xl-2">
+                                    <div class="text-center text-xl-start">
+                                        <button class="ud-btn btn-dark w-100 bdrs12" type="button">Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt30 justify-content-between animate-up-4">
+                            <div class="col-6 col-sm-3 funfact_one">
+                                <div class="details">
+                                    <ul class="ps-0 mb-0 d-flex">
+                                        <li><div class="timer">834</div></li>
+                                        <li><span>M</span></li>
+                                    </ul>
+                                    <p class="mb-0">Total Freelancer</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-3 funfact_one">
+                                <div class="details">
+                                    <ul class="ps-0 mb-0 d-flex">
+                                        <li><div class="timer">732</div></li>
+                                        <li><span>M</span></li>
+                                    </ul>
+                                    <p class="mb-0">Positive Review</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-3 funfact_one">
+                                <div class="details">
+                                    <ul class="ps-0 mb-0 d-flex">
+                                        <li><div class="timer">236</div></li>
+                                        <li><span>M</span></li>
+                                    </ul>
+                                    <p class="mb-0">Projects Completed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 d-none d-xl-block">
+                    <div class="home13-hero-img position-relative">
+                        <div class="position-relative">
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <img class="img-1 mb10" src="~/assets/images/about/home13-hero-img-1.png" alt="">
+                                    <img class="img-2" src="~/assets/images/about/home13-hero-img-2.png" alt="">
+                                </div>
+                                <div class="ml10">
+                                    <img class="img-3" src="~/assets/images/about/home13-hero-img-3.png" alt="">
+                                    <img class="img-4 bounce-x" src="~/assets/images/about/happy-client.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="iconbox-small1 text-start d-flex wow fadeInRight default-box-shadow4 bounce-x animate-up-1">
+                            <span class="icon flaticon-badge"></span>
+                            <div class="details pl20">
+                                <h6 class="mb-1">Proof of quality</h6>
+                                <p class="text fz13 mb-0">Lorem Ipsum Dolar Amet</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Browse talent by category -->
+    <section class="pb40-md pb60">
+        <div class="container">
+            <div class="row align-items-center wow fadeInUp" data-wow-delay="300ms">
+                <div class="col-lg-9">
+                    <div class="main-title2">
+                        <h2 class="title">Browse talent by category</h2>
+                        <p class="paragraph">Get some Inspirations from 1800+ skills</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="text-start text-lg-end mb-4 mb-lg-3">
+                        <a class="ud-btn2" href="page-service-single.html">All Categories<i class="fal fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 d-none d-lg-flex wow fadeInUp">
+                <div class="col">
+                    <div class="iconbox-style1 at-home13-v1 text-center px-0 pt-0">
+                        <div class="icon"><span class="flaticon-developer"></span></div>
+                        <div class="details mt20">
+                            <p class="text mb5">1.853 skills</p>
+                            <h5 class="title">Development & IT</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="iconbox-style1 at-home13-v1 text-center px-0 pt-0">
+                        <div class="icon"><span class="flaticon-web-design-1"></span></div>
+                        <div class="details mt20">
+                            <p class="text mb5">1.853 skills</p>
+                            <h5 class="title">Design & Creative</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="iconbox-style1 at-home13-v1 text-center px-0 pt-0">
+                        <div class="icon"><span class="flaticon-digital-marketing"></span></div>
+                        <div class="details mt20">
+                            <p class="text mb5">1.853 skills</p>
+                            <h5 class="title">Digital Marketing</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="iconbox-style1 at-home13-v1 text-center px-0 pt-0">
+                        <div class="icon"><span class="flaticon-translator"></span></div>
+                        <div class="details mt20">
+                            <p class="text mb5">1.853 skills</p>
+                            <h5 class="title">Writing & Translation</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="iconbox-style1 at-home13-v1 text-center px-0 pt-0">
+                        <div class="icon"><span class="flaticon-microphone"></span></div>
+                        <div class="details mt20">
+                            <p class="text mb5">1.853 skills</p>
+                            <h5 class="title">Music & Audio</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="iconbox-style1 at-home13-v1 text-center px-0 pt-0">
+                        <div class="icon"><span class="flaticon-video-file"></span></div>
+                        <div class="details mt20">
+                            <p class="text mb5">1.853 skills</p>
+                            <h5 class="title">Video & Animation</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="iconbox-style1 at-home13-v1 text-center px-0 pt-0">
+                        <div class="icon"><span class="flaticon-ruler"></span></div>
+                        <div class="details mt20">
+                            <p class="text mb5">1.853 skills</p>
+                            <h5 class="title">Engineering & Architecture</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="iconbox-style1 at-home13-v1 text-center px-0 pt-0">
+                        <div class="icon"><span class="flaticon-goal"></span></div>
+                        <div class="details mt20">
+                            <p class="text mb5">1.853 skills</p>
+                            <h5 class="title">Finance & Accounting</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="iconbox-style1 at-home13-v1 text-center px-0 pt-0">
+                        <div class="icon"><span class="fa-light fa-camera fa-fw"></span></div>
+                        <div class="details mt20">
+                            <p class="text mb5">1.853 skills</p>
+                            <h5 class="title">Photography</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="iconbox-style1 at-home13-v1 text-center px-0 pt-0">
+                        <div class="icon"><span class="flaticon-goal"></span></div>
+                        <div class="details mt20">
+                            <p class="text mb5">1.853 skills</p>
+                            <h5 class="title">Lifestyle</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-block d-lg-none">
+                <div class="col-lg-12">
+                    <div class="slider-outer-dib navi_pagi_top_right slider-5-grid owl-carousel owl-theme wow fadeInUp">
+                        <div class="item">
+                            <div class="iconbox-style1 bdr1">
+                                <div class="icon"><span class="flaticon-developer"></span></div>
+                                <div class="details mt20">
+                                    <p class="text mb5">1.853 skills</p>
+                                    <h4 class="title">Development & IT</h4>
+                                    <p class="mb-0">Software Engineer, Web / Mobile Developer & More</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="iconbox-style1 bdr1">
+                                <div class="icon"><span class="flaticon-web-design-1"></span></div>
+                                <div class="details mt20">
+                                    <p class="text mb5">1.853 skills</p>
+                                    <h4 class="title">Design & Creative</h4>
+                                    <p class="mb-0">Software Engineer, Web / Mobile Developer & More</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="iconbox-style1 bdr1">
+                                <div class="icon"><span class="flaticon-digital-marketing"></span></div>
+                                <div class="details mt20">
+                                    <p class="text mb5">1.853 skills</p>
+                                    <h4 class="title">Digital Marketing</h4>
+                                    <p class="mb-0">Software Engineer, Web / Mobile Developer & More</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="iconbox-style1 bdr1">
+                                <div class="icon"><span class="flaticon-translator"></span></div>
+                                <div class="details mt20">
+                                    <p class="text mb5">1.853 skills</p>
+                                    <h4 class="title">Writing & Translation</h4>
+                                    <p class="mb-0">Software Engineer, Web / Mobile Developer & More</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="iconbox-style1 bdr1">
+                                <div class="icon"><span class="flaticon-microphone"></span></div>
+                                <div class="details mt20">
+                                    <p class="text mb5">1.853 skills</p>
+                                    <h4 class="title">Music & Audio</h4>
+                                    <p class="mb-0">Software Engineer, Web / Mobile Developer & More</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="iconbox-style1 bdr1">
+                                <div class="icon"><span class="flaticon-video-file"></span></div>
+                                <div class="details mt20">
+                                    <p class="text mb5">1.853 skills</p>
+                                    <h4 class="title">Video & Animation</h4>
+                                    <p class="mb-0">Software Engineer, Web / Mobile Developer & More</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="iconbox-style1 bdr1">
+                                <div class="icon"><span class="flaticon-ruler"></span></div>
+                                <div class="details mt20">
+                                    <p class="text mb5">1.853 skills</p>
+                                    <h4 class="title">Engineering & Architecture</h4>
+                                    <p class="mb-0">Software Engineer, Web / Mobile Developer & More</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="iconbox-style1 bdr1">
+                                <div class="icon"><span class="flaticon-goal"></span></div>
+                                <div class="details mt20">
+                                    <p class="text mb5">1.853 skills</p>
+                                    <h4 class="title">Finance & Accounting</h4>
+                                    <p class="mb-0">Software Engineer, Web / Mobile Developer & More</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Services -->
+    <section class="pb90 pb30-md bgc-thm3">
+        <div class="container">
+            <div class="row align-items-center wow fadeInUp">
+                <div class="col-lg-9">
+                    <div class="main-title">
+                        <h2 class="title">Trending Services</h2>
+                        <p class="paragraph">Most viewed and all-time top-selling services</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="text-start text-lg-end mb-4 mb-lg-2">
+                        <a class="ud-btn2" href="page-service-single.html">All Categories<i class="fal fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="slider-outer-dib vam_nav_style dots_none slider-4-grid2 owl-carousel owl-theme wow fadeInUp" data-wow-delay="300ms">
+                        <div class="item">
+                            <div class="listing-style1">
+                                <div class="list-thumb">
+                                    <img class="w-100" src="~/assets/images/listings/g-1.jpg" alt="">
+                                    <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
+                                </div>
+                                <div class="list-content">
+                                    <p class="list-text body-color fz14 mb-1">Web & App Design</p>
+                                    <h5 class="list-title"><a href="page-services-single.html">I will design modern websites in figma or adobe xd</a></h5>
+                                    <div class="review-meta d-flex align-items-center">
+                                        <i class="fas fa-star fz10 review-color me-2"></i>
+                                        <p class="mb-0 body-color fz14"><span class="dark-color me-2">4.82</span>94 reviews</p>
+                                    </div>
+                                    <hr class="my-2">
+                                    <div class="list-meta d-flex justify-content-between align-items-center mt15">
+                                        <a class="d-flex" href="#">
+                                            <span class="position-relative mr10">
+                                                <img class="rounded-circle wa" src="~/assets/images/team/fl-s-1.png" alt="Freelancer Photo">
+                                                <span class="online-badges"></span>
+                                            </span>
+                                            <span class="fz14">Wanda Runo</span>
+                                        </a>
+                                        <div class="budget">
+                                            <p class="mb-0 body-color">Starting at<span class="fz17 fw500 dark-color ms-1">$983</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="listing-style1">
+                                <div class="list-thumb">
+                                    <img class="w-100" src="~/assets/images/listings/g-2.jpg" alt="">
+                                    <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
+                                </div>
+                                <div class="list-content">
+                                    <p class="list-text body-color fz14 mb-1">Art & Illustration</p>
+                                    <h5 class="list-title"><a href="page-services-single.html">I will create modern flat design illustration</a></h5>
+                                    <div class="review-meta d-flex align-items-center">
+                                        <i class="fas fa-star fz10 review-color me-2"></i>
+                                        <p class="mb-0 body-color fz14"><span class="dark-color me-2">4.82</span>94 reviews</p>
+                                    </div>
+                                    <hr class="my-2">
+                                    <div class="list-meta d-flex justify-content-between align-items-center mt15">
+                                        <a class="d-flex" href="#">
+                                            <span class="position-relative mr10">
+                                                <img class="rounded-circle wa" src="~/assets/images/team/fl-s-2.png" alt="Freelancer Photo">
+                                                <span class="online-badges"></span>
+                                            </span>
+                                            <span class="fz14">Ali Tufan</span>
+                                        </a>
+                                        <div class="budget">
+                                            <p class="mb-0 body-color">Starting at<span class="fz17 fw500 dark-color ms-1">$983</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="listing-style1">
+                                <div class="list-thumb">
+                                    <img class="w-100" src="~/assets/images/listings/g-3.jpg" alt="">
+                                    <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
+                                </div>
+                                <div class="list-content">
+                                    <p class="list-text body-color fz14 mb-1">Design & Creative</p>
+                                    <h5 class="list-title line-clamp2"><a href="page-services-single.html">I will build a fully responsive design in HTML,CSS, bootstrap, and javascript</a></h5>
+                                    <div class="review-meta d-flex align-items-center">
+                                        <i class="fas fa-star fz10 review-color me-2"></i>
+                                        <p class="mb-0 body-color fz14"><span class="dark-color me-2">4.82</span>94 reviews</p>
+                                    </div>
+                                    <hr class="my-2">
+                                    <div class="list-meta d-flex justify-content-between align-items-center mt15">
+                                        <a class="d-flex" href="#">
+                                            <span class="position-relative mr10">
+                                                <img class="rounded-circle" src="~/assets/images/team/fl-s-3.png" alt="Freelancer Photo">
+                                                <span class="online-badges"></span>
+                                            </span>
+                                            <span class="fz14">Wanda Runo</span>
+                                        </a>
+                                        <div class="budget">
+                                            <p class="mb-0 body-color">Starting at<span class="fz17 fw500 dark-color ms-1">$983</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="listing-style1">
+                                <div class="list-thumb">
+                                    <img class="w-100" src="~/assets/images/listings/g-4.jpg" alt="">
+                                    <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
+                                </div>
+                                <div class="list-content">
+                                    <p class="list-text body-color fz14 mb-1">Web & App Design</p>
+                                    <h5 class="list-title line-clamp2"><a href="page-services-single.html">I will do mobile app development for ios and android</a></h5>
+                                    <div class="review-meta d-flex align-items-center">
+                                        <i class="fas fa-star fz10 review-color me-2"></i>
+                                        <p class="mb-0 body-color fz14"><span class="dark-color me-2">4.82</span>94 reviews</p>
+                                    </div>
+                                    <hr class="my-2">
+                                    <div class="list-meta d-flex justify-content-between align-items-center mt15">
+                                        <a class="d-flex" href="#">
+                                            <span class="position-relative mr10">
+                                                <img class="rounded-circle" src="~/assets/images/team/fl-s-4.png" alt="Freelancer Photo">
+                                                <span class="online-badges"></span>
+                                            </span>
+                                            <span class="fz14">Wanda Runo</span>
+                                        </a>
+                                        <div class="budget">
+                                            <p class="mb-0 body-color">Starting at<span class="fz17 fw500 dark-color ms-1">$983</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="listing-style1">
+                                <div class="list-thumb">
+                                    <img class="w-100" src="~/assets/images/listings/g-5.jpg" alt="">
+                                    <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
+                                </div>
+                                <div class="list-content">
+                                    <p class="list-text body-color fz14 mb-1">Web & App Design</p>
+                                    <h5 class="list-title"><a href="page-services-single.html">I will design modern websites in figma or adobe xd</a></h5>
+                                    <div class="review-meta d-flex align-items-center">
+                                        <i class="fas fa-star fz10 review-color me-2"></i>
+                                        <p class="mb-0 body-color fz14"><span class="dark-color me-2">4.82</span>94 reviews</p>
+                                    </div>
+                                    <hr class="my-2">
+                                    <div class="list-meta d-flex justify-content-between align-items-center mt15">
+                                        <a class="d-flex" href="#">
+                                            <span class="position-relative mr10">
+                                                <img class="rounded-circle" src="~/assets/images/team/fl-s-1.png" alt="Freelancer Photo">
+                                                <span class="online-badges"></span>
+                                            </span>
+                                            <span class="fz14">Wanda Runo</span>
+                                        </a>
+                                        <div class="budget">
+                                            <p class="mb-0 body-color">Starting at<span class="fz17 fw500 dark-color ms-1">$983</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="listing-style1">
+                                <div class="list-thumb">
+                                    <img class="w-100" src="~/assets/images/listings/g-6.jpg" alt="">
+                                    <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
+                                </div>
+                                <div class="list-content">
+                                    <p class="list-text body-color fz14 mb-1">Web & App Design</p>
+                                    <h5 class="list-title"><a href="page-services-single.html">I will design modern websites in figma or adobe xd</a></h5>
+                                    <div class="review-meta d-flex align-items-center">
+                                        <i class="fas fa-star fz10 review-color me-2"></i>
+                                        <p class="mb-0 body-color fz14"><span class="dark-color me-2">4.82</span>94 reviews</p>
+                                    </div>
+                                    <hr class="my-2">
+                                    <div class="list-meta d-flex justify-content-between align-items-center mt15">
+                                        <a class="d-flex" href="#">
+                                            <span class="position-relative mr10">
+                                                <img class="rounded-circle" src="~/assets/images/team/fl-s-2.png" alt="Freelancer Photo">
+                                                <span class="online-badges"></span>
+                                            </span>
+                                            <span class="fz14">Wanda Runo</span>
+                                        </a>
+                                        <div class="budget">
+                                            <p class="mb-0 body-color">Starting at<span class="fz17 fw500 dark-color ms-1">$983</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="listing-style1">
+                                <div class="list-thumb">
+                                    <img class="w-100" src="~/assets/images/listings/g-7.jpg" alt="">
+                                    <a href="#" class="listing-fav fz12"><span class="far fa-heart"></span></a>
+                                </div>
+                                <div class="list-content">
+                                    <p class="list-text body-color fz14 mb-1">Design & Creative</p>
+                                    <h5 class="list-title line-clamp2"><a href="page-services-single.html">I will build a fully responsive design in HTML,CSS, bootstrap, and javascript</a></h5>
+                                    <div class="review-meta d-flex align-items-center">
+                                        <i class="fas fa-star fz10 review-color me-2"></i>
+                                        <p class="mb-0 body-color fz14"><span class="dark-color me-2">4.82</span>94 reviews</p>
+                                    </div>
+                                    <hr class="my-2">
+                                    <div class="list-meta d-flex justify-content-between align-items-center mt15">
+                                        <a class="d-flex" href="#">
+                                            <span class="position-relative mr10">
+                                                <img class="rounded-circle" src="~/assets/images/team/fl-s-3.png" alt="Freelancer Photo">
+                                                <span class="online-badges"></span>
+                                            </span>
+                                            <span class="fz14">Wanda Runo</span>
+                                        </a>
+                                        <div class="budget">
+                                            <p class="mb-0 body-color">Starting at<span class="fz17 fw500 dark-color ms-1">$983</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Need something -->
+    <section class="our-features pb90">
+        <div class="container wow fadeInUp">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="main-title">
+                        <h2>Need something done?</h2>
+                        <p class="text">Most viewed and all-time top-selling services</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="iconbox-style1 border-less p-0">
+                        <div class="icon before-none"><span class="flaticon-cv"></span></div>
+                        <div class="details">
+                            <h4 class="title mt10 mb-3">Post a job</h4>
+                            <p class="text">It’s free and easy to post a job. Simply fill <br class="d-none d-xxl-block"> in a title, description.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="iconbox-style1 border-less p-0">
+                        <div class="icon before-none"><span class="flaticon-web-design"></span></div>
+                        <div class="details">
+                            <h4 class="title mt10 mb-3">Choose freelancers</h4>
+                            <p class="text">It’s free and easy to post a job. Simply fill <br class="d-none d-xxl-block"> in a title, description.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="iconbox-style1 border-less p-0">
+                        <div class="icon before-none"><span class="flaticon-secure"></span></div>
+                        <div class="details">
+                            <h4 class="title mt10 mb-3">Pay safely</h4>
+                            <p class="text">It’s free and easy to post a job. Simply fill <br class="d-none d-xxl-block"> in a title, description.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="iconbox-style1 border-less p-0">
+                        <div class="icon before-none"><span class="flaticon-customer-service"></span></div>
+                        <div class="details">
+                            <h4 class="title mt10 mb-3">We’re here to help</h4>
+                            <p class="text">It’s free and easy to post a job. Simply fill <br class="d-none d-xxl-block"> in a title, description.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="p-0">
+        <div class="cta-banner3 bgc-dark pt120 pt60-lg pb90 pb60-lg position-relative overflow-hidden">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-xl-5 wow fadeInRight" data-wow-delay="300ms">
+                        <div class="mb30">
+                            <div class="main-title">
+                                <h2 class="title text-white">A whole world of freelance <br class="d-none d-xl-block"> talent at your fingertips</h2>
+                            </div>
+                        </div>
+                        <div class="why-chose-list pr60 pr0-lg">
+                            <div class="list-one d-flex align-items-start mb30">
+                                <span class="list-icon flex-shrink-0 flaticon-badge text-white"></span>
+                                <div class="list-content flex-grow-1 ml20">
+                                    <h4 class="mb-1 text-white">Proof of quality</h4>
+                                    <p class="text mb-0 fz15 text-white">Check any pro’s work samples, client reviews, and identity <br class="d-none d-lg-block"> verification.</p>
+                                </div>
+                            </div>
+                            <div class="list-one d-flex align-items-start mb30">
+                                <span class="list-icon flex-shrink-0 flaticon-money text-white"></span>
+                                <div class="list-content flex-grow-1 ml20">
+                                    <h4 class="mb-1 text-white">No cost until you hire</h4>
+                                    <p class="text mb-0 fz15 text-white">Interview potential fits for your job, negotiate rates, and only pay <br class="d-none d-lg-block"> for work you approve.</p>
+                                </div>
+                            </div>
+                            <div class="list-one d-flex align-items-start mb30">
+                                <span class="list-icon flex-shrink-0 flaticon-security text-white"></span>
+                                <div class="list-content flex-grow-1 ml20">
+                                    <h4 class="mb-1 text-white">Safe and secure</h4>
+                                    <p class="text mb-0 fz15 text-white">Focus on your work knowing we help protect your data and privacy. We’re here with 24/7 support if you need it.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 wow fadeInLeft">
+                        <div class="home13-ctaimg-1">
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <img class="mb35" src="~/assets/images/about/home13-cta-1.png" alt="">
+                                    <img src="~/assets/images/about/home13-cta-2.png" alt="">
+                                </div>
+                                <div>
+                                    <img class="mb35" src="~/assets/images/about/home13-cta-3.png" alt="">
+                                    <img src="~/assets/images/about/home13-cta-4.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Funfact -->
+    <section class="pb0 pt60">
+        <div class="container maxw1600 bdrb1 pb60">
+            <div class="row justify-content-center wow fadeInUp" data-wow-delay="300ms">
+                <div class="col-6 col-md-3">
+                    <div class="funfact_one mb20-sm text-center">
+                        <div class="details">
+                            <ul class="ps-0 mb-0 d-flex justify-content-center">
+                                <li><div class="timer">834</div></li>
+                                <li><span>M</span></li>
+                            </ul>
+                            <p class="text mb-0">Total Freelancer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="funfact_one mb20-sm text-center">
+                        <div class="details">
+                            <ul class="ps-0 mb-0 d-flex justify-content-center">
+                                <li><div class="timer">732</div></li>
+                                <li><span>M</span></li>
+                            </ul>
+                            <p class="text mb-0">Positive Review</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="funfact_one mb20-sm text-center">
+                        <div class="details">
+                            <ul class="ps-0 mb-0 d-flex justify-content-center">
+                                <li><div class="timer">90</div></li>
+                                <li><span>M</span></li>
+                            </ul>
+                            <p class="text mb-0">Order recieved</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="funfact_one mb20-sm text-center">
+                        <div class="details">
+                            <ul class="ps-0 mb-0 d-flex justify-content-center">
+                                <li><div class="timer">236</div></li>
+                                <li><span>M</span></li>
+                            </ul>
+                            <p class="text mb-0">Projects Completed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customers Testimonials -->
+    <section class="">
+        <div class="container">
+            <div class="row wow fadeInUp">
+                <div class="col-lg-12">
+                    <div class="testimonial-slider-home13 vam_nav_style dots_none slider-1-grid2 owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="row align-items-center">
+                                <div class="col-lg-5 col-xl-5">
+                                    <div class="testimonial-style4-img position-relative">
+                                        <img class="bdrs12" src="~/assets/images/about/about-16.jpg" alt="">
+                                        <a class="video-button-home11 at-home13 popup-iframe popup-youtube" href="https://www.youtube.com/watch?v=1WdiUn9JaX0"><i class="far fa-play"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-xl-6 offset-xl-1">
+                                    <div class="testimonial-style4 position-relative ps-0">
+                                        <h2 class="sub-title text-thm mb25">Envato</h2>
+                                        <h4 class="title mb35">“ I have used Freeio numerous times for several different companies. I have always had great experiences. I once tried using someone else and I ended up having to cancel the order and move back to Freeio. ”</h4>
+                                        <h6 class="author fz14">Courtney Henry</h6>
+                                        <p class="desig mb-0">Product Manager | Envato</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row align-items-center">
+                                <div class="col-lg-5 col-xl-5">
+                                    <div class="testimonial-style4-img position-relative">
+                                        <img class="bdrs12" src="~/assets/images/about/about-16.jpg" alt="">
+                                        <a class="video-button-home11 popup-iframe popup-youtube" href="https://www.youtube.com/watch?v=1WdiUn9JaX0"><i class="far fa-play"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-xl-6 offset-xl-1">
+                                    <div class="testimonial-style4 position-relative ps-0">
+                                        <h2 class="sub-title text-thm mb25">Envato</h2>
+                                        <h4 class="title mb35">“ I have used Freeio numerous times for several different companies. I have always had great experiences. I once tried using someone else and I ended up having to cancel the order and move back to Freeio. ”</h4>
+                                        <h6 class="author fz14">Courtney Henry</h6>
+                                        <p class="desig mb-0">Product Manager | Envato</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highest Rated Freelancers -->
+    <section class="bgc-thm4 pb90 pb30-md">
+        <div class="container">
+            <div class="row align-items-center wow fadeInUp">
+                <div class="col-lg-9">
+                    <div class="main-title">
+                        <h2 class="title">Highest Rated Freelancers</h2>
+                        <p class="paragraph">Most viewed and all-time top-selling services</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="text-lg-end mb-2">
+                        <a href="page-freelancer-v1.html" class="ud-btn2">All Freelancers <i class="fal fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="vam_nav_style dots_none slider-4-grid2 owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="feature-style1 at-home13 mb30 bdrs12">
+                                <div class="feature-img bdrs12 overflow-hidden"><img class="w-100" src="~/assets/images/team/home13-team-1.jpg" alt=""></div>
+                                <div class="feature-content">
+                                    <div class="top-area">
+                                        <h5 class="title mb-1">Robert Fox</h5>
+                                        <h6 class="text fz14">Scrum Master</h6>
+                                    </div>
+                                    <div class="review">
+                                        <span class="text-white fz15 fw500"><i class="fas fa-star mr15"></i>4.9</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="feature-style1 at-home13 mb30 bdrs12">
+                                <div class="feature-img bdrs12 overflow-hidden"><img class="w-100" src="~/assets/images/team/home13-team-2.jpg" alt=""></div>
+                                <div class="feature-content">
+                                    <div class="top-area">
+                                        <h5 class="title mb-1">Floyd Miles</h5>
+                                        <h6 class="text fz14">Software Developer</h6>
+                                    </div>
+                                    <div class="review">
+                                        <span class="text-white fz15 fw500"><i class="fas fa-star mr15"></i>4.9</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="feature-style1 at-home13 mb30 bdrs12">
+                                <div class="feature-img bdrs12 overflow-hidden"><img class="w-100" src="~/assets/images/team/home13-team-3.jpg" alt=""></div>
+                                <div class="feature-content">
+                                    <div class="top-area">
+                                        <h5 class="title mb-1">Brooklyn Simmons</h5>
+                                        <h6 class="text fz14">Software Tester</h6>
+                                    </div>
+                                    <div class="review">
+                                        <span class="text-white fz15 fw500"><i class="fas fa-star mr15"></i>4.9</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="feature-style1 at-home13 mb30 bdrs12">
+                                <div class="feature-img bdrs12 overflow-hidden"><img class="w-100" src="~/assets/images/team/home13-team-4.jpg" alt=""></div>
+                                <div class="feature-content">
+                                    <div class="top-area">
+                                        <h5 class="title mb-1">Jane Cooper</h5>
+                                        <h6 class="text fz14">UI/UX Designer</h6>
+                                    </div>
+                                    <div class="review">
+                                        <span class="text-white fz15 fw500"><i class="fas fa-star mr15"></i>4.9</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Blog -->
+    <section class="pb80 pb20-md">
+        <div class="container">
+            <div class="row align-items-center wow fadeInUp" data-wow-delay="00ms">
+                <div class="col-lg-9">
+                    <div class="main-title">
+                        <h2 class="title">Our Blog</h2>
+                        <p class="paragraph">See how you can up your career status</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="text-start text-lg-end mb-4 mb-lg-2">
+                        <a class="ud-btn2" asp-action="Index" asp-controller="Blog">All Categories<i class="fal fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row wow fadeInUp" data-wow-delay="300ms">
+                <div class="col-sm-6 col-xl-3">
+                    <div class="blog-style1 box-shadow-none">
+                        <div class="blog-img"><img class="w-100 bdrs4" src="~/assets/images/blog/blog-1.jpg" alt=""></div>
+                        <div class="blog-content ps-0 pt20 pb-0">
+                            <a class="date" href="#">December 2, 2022</a>
+                            <h4 class="title mt-1"><a href="page-blog-single.html">Start an online business and work from home</a></h4>
+                            <p class="text mb-0">A complete guide to starting a small business online</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                    <div class="blog-style1 box-shadow-none">
+                        <div class="blog-img"><img class="w-100" src="~/assets/images/blog/blog-2.jpg" alt=""></div>
+                        <div class="blog-content ps-0 pt20 pb-0">
+                            <a class="date" href="#">December 2, 2022</a>
+                            <h4 class="title mt-1"><a href="page-blog-single.html">Front becomes an official Instagram Marketing Partner</a></h4>
+                            <p class="text mb-0">A complete guide to starting a small business online</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                    <div class="blog-style1 box-shadow-none">
+                        <div class="blog-img"><img class="w-100" src="~/assets/images/blog/blog-3.jpg" alt=""></div>
+                        <div class="blog-content ps-0 pt20 pb-0">
+                            <a class="date" href="#">December 2, 2022</a>
+                            <h4 class="title mt-1"><a href="page-blog-single.html">Engendering a culture of professional development</a></h4>
+                            <p class="text mb-0">A complete guide to starting a small business online</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                    <div class="blog-style1 box-shadow-none">
+                        <div class="blog-img"><img class="w-100" src="~/assets/images/blog/blog-4.jpg" alt=""></div>
+                        <div class="blog-content ps-0 pt20 pb-0">
+                            <a class="date" href="#">December 2, 2022</a>
+                            <h4 class="title mt-1"><a href="page-blog-single.html">Increasing engagement with Instagram</a></h4>
+                            <p class="text mb-0">A complete guide to starting a small business online</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Partners -->
+    <section class="our-partners pt-0">
+        <div class="container">
+            <div class="row wow fadeInUp">
+                <div class="col-lg-12">
+                    <div class="main-title text-center">
+                        <h6>Trusted by the world’s best</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="row wow fadeInUp">
+                <div class="col-6 col-md-4 col-xl-2">
+                    <div class="partner_item text-center mb30-lg"><img class="wa m-auto" src="~/assets/images/partners/1.png" alt="1.png"></div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-2">
+                    <div class="partner_item text-center mb30-lg"><img class="wa m-auto" src="~/assets/images/partners/2.png" alt="2.png"></div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-2">
+                    <div class="partner_item text-center mb30-lg"><img class="wa m-auto" src="~/assets/images/partners/3.png" alt="3.png"></div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-2">
+                    <div class="partner_item text-center mb30-lg"><img class="wa m-auto" src="~/assets/images/partners/4.png" alt="4.png"></div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-2">
+                    <div class="partner_item text-center mb30-lg"><img class="wa m-auto" src="~/assets/images/partners/5.png" alt="5.png"></div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-2">
+                    <div class="partner_item text-center mb30-lg"><img class="wa m-auto" src="~/assets/images/partners/6.png" alt="6.png"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our CTA -->
+    <section class="home11-cta-3 at-home13">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6 col-lg-8 wow fadeInLeft">
+                    <div class="cta-style3">
+                        <h2 class="cta-title">Find the talent needed to get your <br class="d-none d-xl-block">business growing.</h2>
+                        <p class="cta-text">Advertise your jobs to millions of monthly users and search 15.8 million CVs</p>
+                        <a href="page-contact.html" class="ud-btn btn-dark default-box-shadow1">Get Started <i class="fal fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeIn">
+                    <img class="home11-ctaimg-v3 d-none d-md-block" src="~/assets/images/about/about-12.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>

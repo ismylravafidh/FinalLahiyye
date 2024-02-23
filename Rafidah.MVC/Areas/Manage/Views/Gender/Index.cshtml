@@ -1,0 +1,37 @@
+﻿@using Rafidah.Business.ViewModels.Gender
+@model List<GenderListVm>
+@{
+    int count = 0;
+}
+<div class="container">
+    <div class="d-flex" style="justify-content:space-between;align-items:center">
+        <h1>Genders</h1>
+        <a class="btn btn-primary" asp-controller="Gender" asp-action="Create">Create</a>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">No#</th>
+                <th scope="col">Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                count++;
+                <tr>
+                    <th scope="row">@count</th>
+                    <td>@item.GenderName</td>
+                    <td>
+                        <a class="btn btn-secondary" asp-controller="Gender" asp-action="Update" asp-route-id="@item.Id">Update</a>
+                        <a class="btn btn-danger" asp-controller="Gender" asp-action="SoftDelete" asp-route-id="@item.Id">Soft Delete</a>
+                        <a class="btn btn-danger" asp-controller="Gender" asp-action="ReverseDelete" asp-route-id="@item.Id">Reverse Delete</a>
+                    </td>
+                </tr>
+            }
+
+
+        </tbody>
+    </table>
+</div>

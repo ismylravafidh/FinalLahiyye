@@ -1,0 +1,446 @@
+﻿@using Rafidah.Core.Entities
+@model List<Job>
+    <br />
+    <br />
+<!-- Breadcumb Sections -->
+<section class="breadcumb-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcumb-style1">
+                    <div class="breadcumb-list">
+                        <a asp-action="Index" asp-controller="Home">Home</a>
+                        <a asp-action="Index" asp-controller="Job">Jobs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Breadcumb Sections -->
+<section class="breadcumb-section pt-0">
+    <div class="cta-job-v1 cta-banner mx-auto maxw1700  pb120 bdrs16 position-relative overflow-hidden d-flex align-items-center mx20-lg px30-lg" style="height:600px!important; padding-top:10px!important;">
+        <img class="left-top-img wow zoomIn" src="~/assets/images/vector-img/left-top.png" alt="">
+        <img class="right-bottom-img wow zoomIn" src="~/assets/images/vector-img/right-bottom.png" alt="">
+        <img class="service-v1-vector at-job bounce-x d-none d-xl-block" src="~/assets/images/vector-img/vector-service-v1.png" alt="">
+        <div class="container">
+            <div class="row wow fadeInUp">
+                <div class="col-xl-7">
+                    <div class="position-relative">
+                        <h2>Job List</h2>
+                        <p class="text">All the Lorem Ipsum generators on the Internet tend to repeat.</p>
+                    </div>
+                    <div class="advance-search-tab bgc-white p10 bdrs4 mt30">
+                        <div class="row">
+                            <div class="col-md-5 col-lg-6 col-xl-6">
+                                <div class="advance-search-field bdrr1 bdrn-sm">
+                                    <form class="form-search position-relative">
+                                        <div class="box-search bb1-sm">
+                                            <span class="icon fas fa-search"></span>
+                                            <input class="form-control" type="text" name="search" placeholder="What are you looking for?">
+                                            <div class="search-suggestions">
+                                                <h6 class="fz14 ml30 mt25 mb-3">Popular Search</h6>
+                                                <div class="box-suggestions">
+                                                    <ul class="px-0 m-0 pb-4">
+                                                        <li>
+                                                            <div class="info-product">
+                                                                <div class="item_title">mobile app development</div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="info-product">
+                                                                <div class="item_title">mobile app builder</div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="info-product">
+                                                                <div class="item_title">mobile legends</div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="info-product">
+                                                                <div class="item_title">mobile app ui ux design</div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="info-product">
+                                                                <div class="item_title">mobile game app development</div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="info-product">
+                                                                <div class="item_title">mobile app design</div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-4 col-xl-3">
+                                <div class="bselect-style1">
+                                    <select class="selectpicker" data-width="100%">
+                                        <option>City, state, or zip</option>
+                                        <option data-tokens="Graphics&Design">Graphics & Design</option>
+                                        <option data-tokens="DigitlMarketing">Digital Marketing</option>
+                                        <option data-tokens="Writing&Translation">Writing & Translation</option>
+                                        <option data-tokens="Video&Animation">Video & Animation</option>
+                                        <option data-tokens="Music&Audio">Music & Audio</option>
+                                        <option data-tokens="Programming&Tech">Programming & Tech</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-lg-2 col-xl-3">
+                                <div class="text-center text-xl-start">
+                                    <a class="ud-btn btn-thm2 w-100 vam" href="#">Search</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Listings All Lists -->
+<section class="pt30 pb90">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="list-sidebar-style1 d-none d-lg-block">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card mb20 pb10 mt-0">
+                            <div class="card-header active" id="heading0">
+                                <h4>
+                                    <button class="btn btn-link ps-0 pt-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse0" aria-expanded="true" aria-controls="collapse0">Category</button>
+                                </h4>
+                            </div>
+                            <div id="collapse0" class="collapse show" aria-labelledby="heading0" data-parent="#accordionExample">
+                                <div class="card-body card-body px-0 pt-0">
+                                    <div class="checkbox-style1 mb15">
+                                        <label class="custom_checkbox">
+                                            Designer
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                            <span class="right-tags">(1,945)</span>
+                                        </label>
+                                        <label class="custom_checkbox">
+                                            Web Developers
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                            <span class="right-tags">(8,136)</span>
+                                        </label>
+                                        <label class="custom_checkbox">
+                                            Illustrators
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                            <span class="right-tags">(917)</span>
+                                        </label>
+                                        <label class="custom_checkbox">
+                                            Node.js
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                            <span class="right-tags">(240)</span>
+                                        </label>
+                                        <label class="custom_checkbox">
+                                            Project Managers
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                            <span class="right-tags">((2,460)</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb20 pb0">
+                            <div class="card-header active" id="heading1">
+                                <h4>
+                                    <button class="btn btn-link ps-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">Salary</button>
+                                </h4>
+                            </div>
+                            <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordionExample">
+                                <div class="card-body card-body px-0 pt-0">
+                                    <!-- Range Slider Desktop Version -->
+                                    <div class="range-slider-style1">
+                                        <div class="range-wrapper">
+                                            <div class="slider-range mb10 mt15"></div>
+                                            <div class="text-center">
+                                                <input type="text" class="amount" placeholder="$20"><span class="fa-sharp fa-solid fa-minus mx-2 dark-color"></span>
+                                                <input type="text" class="amount2" placeholder="$70987">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb20 pb5">
+                            <div class="card-header active" id="heading2">
+                                <h4>
+                                    <button class="btn btn-link ps-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">Job Type</button>
+                                </h4>
+                            </div>
+                            <div id="collapse2" class="collapse show" aria-labelledby="heading2" data-parent="#accordionExample">
+                                <div class="card-body card-body px-0 pt-0">
+                                    <div class="widget-wrapper pr20">
+                                        <div class="switch-style1">
+                                            <div class="form-check form-switch mb20">
+                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault1">
+                                                <label class="form-check-label" for="flexSwitchCheckDefault1">Freelance</label>
+                                                <span class="right-tags">(1,945)</span>
+                                            </div>
+                                        </div>
+                                        <div class="switch-style1">
+                                            <div class="form-check form-switch mb20">
+                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault2" checked="checked">
+                                                <label class="form-check-label" for="flexSwitchCheckDefault2">Full Time</label>
+                                                <span class="right-tags">(8,136)</span>
+                                            </div>
+                                        </div>
+                                        <div class="switch-style1">
+                                            <div class="form-check form-switch mb20">
+                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault3">
+                                                <label class="form-check-label" for="flexSwitchCheckDefault3">Part Time</label>
+                                                <span class="right-tags">(917)</span>
+                                            </div>
+                                        </div>
+                                        <div class="switch-style1">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault4">
+                                                <label class="form-check-label" for="flexSwitchCheckDefault4">Internship</label>
+                                                <span class="right-tags">(240)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="text-thm" href="#">+20 more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb20 pb5">
+                            <div class="card-header active" id="heading3">
+                                <h4>
+                                    <button class="btn btn-link ps-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">Level</button>
+                                </h4>
+                            </div>
+                            <div id="collapse3" class="collapse show" aria-labelledby="heading3" data-parent="#accordionExample">
+                                <div class="card-body card-body px-0 pt-0">
+                                    <div class="checkbox-style1">
+                                        <label class="custom_checkbox">
+                                            All
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                            <span class="right-tags">(1,945)</span>
+                                        </label>
+                                        <label class="custom_checkbox">
+                                            Internship
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                            <span class="right-tags">(8,136)</span>
+                                        </label>
+                                        <label class="custom_checkbox">
+                                            Entery Level
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                            <span class="right-tags">(917)</span>
+                                        </label>
+                                        <label class="custom_checkbox">
+                                            Mid-Senior
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                            <span class="right-tags">(240)</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="row align-items-center mb20">
+                    <div class="col-md-6">
+                        <div class="text-center text-md-start">
+                            <p class="text mb-0 mb10-sm"><span class="fw500">5,512</span> services available</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="page_control_shorting d-md-flex align-items-center justify-content-center justify-content-md-end">
+                            <div class="dropdown-lists d-block d-lg-none me-2 mb10-sm">
+                                <ul class="p-0 mb-0 text-center text-md-start">
+                                    <li>
+                                        <!-- Advance Features modal trigger -->
+                                        <button type="button" class="open-btn filter-btn-left"> <img class="me-2" src="~/assets/images/icon/all-filter-icon.svg" alt=""> All Filter</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="pcs_dropdown dark-color pr10 text-center text-md-end">
+                                <span>Sort by</span>
+                                <select class="selectpicker show-tick">
+                                    <option>Best Selling</option>
+                                    <option>Recommended</option>
+                                    <option>New Arrivals</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-xl-12">
+                        <div class="job-list-style1 bdr1 d-xl-flex align-items-start">
+                            <div class="icon d-flex align-items-center mb20">
+                                <img class="wa" src="~/assets/images/team/client-1.png" alt="">
+                                <span class="fav-icon flaticon-star"></span>
+                            </div>
+                            <div class="details ml20 ml0-xl">
+                                <h5>Marketing and Communications Manager</h5>
+                                <h6 class="mb-3 text-thm">Mailchimp</h6>
+                                <p class="list-inline-item mb-0">$125k-$135k Hourly</p>
+                                <p class="list-inline-item mb-0 bdrl1 pl15">1-5 Days</p>
+                                <p class="list-inline-item mb-0 bdrl1 pl15">Expensive</p>
+                                <p class="list-inline-item mb-0 bdrl1 pl15">Remote</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-12">
+                        <div class="job-list-style1 bdr1 d-xl-flex align-items-start">
+                            <div class="icon d-flex align-items-center mb20">
+                                <img class="wa" src="~/assets/images/team/client-3.png" alt="">
+                                <span class="fav-icon flaticon-star"></span>
+                            </div>
+                            <div class="details ml20 ml0-xl">
+                                <h5>Senior backend developer</h5>
+                                <h6 class="mb-3 text-thm">Invision</h6>
+                                <p class="list-inline-item mb-0">$125k-$135k Hourly</p>
+                                <p class="list-inline-item mb-0 bdrl1 pl15">1-5 Days</p>
+                                <p class="list-inline-item mb-0 bdrl1 pl15">Expensive</p>
+                                <p class="list-inline-item mb-0 bdrl1 pl15">Remote</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-12">
+                        <div class="job-list-style1 bdr1 d-xl-flex align-items-start">
+                            <div class="icon d-flex align-items-center mb20">
+                                <img class="wa" src="~/assets/images/team/client-4.png" alt="">
+                                <span class="fav-icon flaticon-star"></span>
+                            </div>
+                            <div class="details ml20 ml0-xl">
+                                <h5>Senior product manager</h5>
+                                <h6 class="mb-3 text-thm">Mailchimp</h6>
+                                <p class="list-inline-item mb-0">$125k-$135k Hourly</p>
+                                <p class="list-inline-item mb-0 bdrl1 pl15">1-5 Days</p>
+                                <p class="list-inline-item mb-0 bdrl1 pl15">Expensive</p>
+                                <p class="list-inline-item mb-0 bdrl1 pl15">Remote</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-12">
+                        <div class="job-list-style1 bdr1 d-xl-flex align-items-start">
+                            <div class="icon d-flex align-items-center mb20">
+                                <img class="wa" src="~/assets/images/team/client-5.png" alt="">
+                                <span class="fav-icon flaticon-star"></span>
+                            </div>
+                            <div class="details ml20 ml0-xl">
+                                <h5>Administrative Business Partner</h5>
+                                <h6 class="mb-3 text-thm">Mailchimp</h6>
+                                <p class="list-inline-item mb-0">$125k-$135k Hourly</p>
+                                <p class="list-inline-item mb-0 bdrl1 pl15">1-5 Days</p>
+                                <p class="list-inline-item mb-0 bdrl1 pl15">Expensive</p>
+                                <p class="list-inline-item mb-0 bdrl1 pl15">Remote</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-12">
+                        <div class="job-list-style1 bdr1 d-xl-flex align-items-start">
+                            <div class="icon d-flex align-items-center mb20">
+                                <img class="wa" src="~/assets/images/team/client-1.png" alt="">
+                                <span class="fav-icon flaticon-star"></span>
+                            </div>
+                            <div class="details ml20 ml0-xl">
+                                <h5>Senior B2B sales consultant</h5>
+                                <h6 class="mb-3 text-thm">Mailchimp</h6>
+                                <p class="list-inline-item mb-0">$125k-$135k Hourly</p>
+                                <p class="list-inline-item mb-0 bdrl1 pl15">1-5 Days</p>
+                                <p class="list-inline-item mb-0 bdrl1 pl15">Expensive</p>
+                                <p class="list-inline-item mb-0 bdrl1 pl15">Remote</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-12">
+                        <div class="job-list-style1 bdr1 d-xl-flex align-items-start">
+                            <div class="icon d-flex align-items-center mb20">
+                                <img class="wa" src="~/assets/images/team/client-6.png" alt="">
+                                <span class="fav-icon flaticon-star"></span>
+                            </div>
+                            <div class="details ml20 ml0-xl">
+                                <h5>Office assistant/Social media assistant</h5>
+                                <h6 class="mb-3 text-thm">Medium</h6>
+                                <p class="list-inline-item mb-0">$125k-$135k Hourly</p>
+                                <p class="list-inline-item mb-0 bdrl1 pl15">1-5 Days</p>
+                                <p class="list-inline-item mb-0 bdrl1 pl15">Expensive</p>
+                                <p class="list-inline-item mb-0 bdrl1 pl15">Remote</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-12">
+                        <div class="job-list-style1 bdr1 d-xl-flex align-items-start">
+                            <div class="icon d-flex align-items-center mb20">
+                                <img class="wa" src="~/assets/images/team/client-8.png" alt="">
+                                <span class="fav-icon flaticon-star"></span>
+                            </div>
+                            <div class="details ml20 ml0-xl">
+                                <h5>Marketing and Communications Manager</h5>
+                                <h6 class="mb-3 text-thm">Figma</h6>
+                                <p class="list-inline-item mb-0">$125k-$135k Hourly</p>
+                                <p class="list-inline-item mb-0 bdrl1 pl15">1-5 Days</p>
+                                <p class="list-inline-item mb-0 bdrl1 pl15">Expensive</p>
+                                <p class="list-inline-item mb-0 bdrl1 pl15">Remote</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-12">
+                        <div class="job-list-style1 bdr1 d-xl-flex align-items-start">
+                            <div class="icon d-flex align-items-center mb20">
+                                <img class="wa" src="~/assets/images/team/client-7.png" alt="">
+                                <span class="fav-icon flaticon-star"></span>
+                            </div>
+                            <div class="details ml20 ml0-xl">
+                                <h5>Website Designer Required For Directory Theme</h5>
+                                <h6 class="mb-3 text-thm">Udemy</h6>
+                                <p class="list-inline-item mb-0">$125k-$135k Hourly</p>
+                                <p class="list-inline-item mb-0 bdrl1 pl15">1-5 Days</p>
+                                <p class="list-inline-item mb-0 bdrl1 pl15">Expensive</p>
+                                <p class="list-inline-item mb-0 bdrl1 pl15">Remote</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mbp_pagination mt30 text-center">
+                        <ul class="page_navigation">
+                            <li class="page-item">
+                                <a class="page-link" href="#"> <span class="fas fa-angle-left"></span></a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item active" aria-current="page">
+                                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item d-inline-block d-sm-none"><a class="page-link" href="#">...</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item d-none d-sm-inline-block"><a class="page-link" href="#">...</a></li>
+                            <li class="page-item d-none d-sm-inline-block"><a class="page-link" href="#">20</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#"><span class="fas fa-angle-right"></span></a>
+                            </li>
+                        </ul>
+                        <p class="mt10 mb-0 pagination_page_count text-center">1 – 20 of 300+ property available</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

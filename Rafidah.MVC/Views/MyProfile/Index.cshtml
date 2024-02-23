@@ -1,0 +1,323 @@
+﻿@using Rafidah.Core.Entities
+@using Rafidah.MVC.ViewModels
+@model HomeVm
+
+<br />
+<br />
+<!-- Breadcumb Sections -->
+<section class="breadcumb-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="breadcumb-style1">
+					<div class="breadcumb-list">
+						<a asp-action="Index" asp-controller="Home">Home</a>
+						<a asp-action="Index" asp-controller="MyProfile">My Profile</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<div class="col-lg-9">
+	<div class="dashboard_title_area">
+		<h2>My Profile</h2>
+		<p class="text">Lorem ipsum dolor sit amet, consectetur.</p>
+	</div>
+</div>
+		  </div>
+<div class="row">
+	<div class="col-xl-12">
+		<form method="post" asp-action="Update">
+			<div class="ps-widget bgc-white bdrs4 p30 mb30 overflow-hidden position-relative">
+				<div class="bdrb1 pb15 mb25">
+					<h5 class="list-title">Profile Details</h5>
+				</div>
+				<div class="col-xl-7">
+					<div class="profile-box d-sm-flex align-items-center mb30">
+						<div class="profile-img mb20-sm">
+							<img class="w-100 rounded-circle wa-xs" src="~/assets/images/team/fl-1.png" alt="">
+						</div>
+						<div class="profile-content ml20 ml0-xs">
+							<div class="d-flex align-items-center my-3">
+								<a href="#" class="tag-delt text-thm2"><span class="flaticon-delete text-thm2"></span></a>
+								<a href="#" class="upload-btn ml10">Upload Images</a>
+							</div>
+							<p class="text mb-0">Max file size is 1MB, Minimum dimension: 330x300 And Suitable files are .jpg & .png</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-7">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="mb20">
+								<label asp-for="AppUser.UserName" class="heading-color ff-heading fw500 mb10">Username</label>
+								<input asp-for="AppUser.UserName" class="form-control">
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="mb20">
+								<label asp-for="AppUser.Email" class="heading-color ff-heading fw500 mb10">Email Address</label>
+								<input asp-for="AppUser.Email" class="form-control">
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="mb20">
+								<label asp-for="AppUser.PhoneNumber" class="heading-color ff-heading fw500 mb10">Phone Number</label>
+								<input asp-for="AppUser.PhoneNumber" class="form-control">
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="mb20">
+								<div class="form-style1">
+									<label asp-for="AppUser.HourlyRateId" class="heading-color ff-heading fw500 mb10">Hourly Rate</label>
+									<div class="bootselect-multiselect">
+										<select asp-for="AppUser.HourlyRateId" class="form-select" asp-items="new SelectList(ViewBag.HourlyRate,nameof(HourlyRate.Id),nameof(HourlyRate.Hourly))">
+											<option selected>Select</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<div class="mb20">
+								<div class="form-style1">
+									<label asp-for="AppUser.GenderId" class="heading-color ff-heading fw500 mb10">Gender</label>
+									<div class="bootselect-multiselect">
+										<select asp-for="AppUser.GenderId" class="form-select" asp-items="new SelectList(ViewBag.Gender,nameof(Gender.Id),nameof(Gender.GenderName))">
+											<option selected>Select</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="mb20">
+								<div class="form-style1">
+									<label asp-for="AppUser.CountryId" class="heading-color ff-heading fw500 mb10">Country</label>
+									<div class="bootselect-multiselect">
+										<select asp-for="AppUser.CountryId" class="form-select" asp-items="new SelectList(ViewBag.Country,nameof(Country.Id),nameof(Country.CountryName))">
+											<option selected>Select</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="mb20">
+								<div class="form-style1">
+									<label asp-for="AppUser.CityId" class="heading-color ff-heading fw500 mb10">City</label>
+									<div class="bootselect-multiselect">
+										<select asp-for="AppUser.CityId" class="form-select" asp-items="new SelectList(ViewBag.City,nameof(City.Id),nameof(City.CityName))">
+											<option selected>Select</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="mb20">
+								<div class="form-style1">
+									<label asp-for="AppUser.LanguageId" class="heading-color ff-heading fw500 mb10">Languages</label>
+									<div class="bootselect-multiselect">
+										<select asp-for="AppUser.LanguageId" class="form-select" asp-items="new SelectList(ViewBag.Language,nameof(Language.Id),nameof(Language.LanguageName))">
+											<option selected>Select</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="mb20">
+								<div class="form-style1">
+									<label asp-for="AppUser.LanguageLevelId" class="heading-color ff-heading fw500 mb10">Languages Level</label>
+									<div class="bootselect-multiselect">
+										<select asp-for="AppUser.LanguageLevelId" class="form-select" asp-items="new SelectList(ViewBag.LanguageLevel,nameof(LanguageLevel.Id),nameof(LanguageLevel.LanguageLevelName))">
+											<option selected>Select</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="mb10">
+								<label asp-for="AppUser.Description" class="heading-color ff-heading fw500 mb10">Introduce Yourself</label>
+								<textarea asp-for="AppUser.Description" cols="30" rows="6" placeholder="Description"></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ps-widget bgc-white bdrs4 p30 mb30 overflow-hidden position-relative">
+				<div class="col-lg-7">
+					<div class="row">
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="mb20">
+									<div class="form-style1">
+										<label asp-for="AppUser.CategoryId" class="heading-color ff-heading fw500 mb10">Skill</label>
+										<div class="bootselect-multiselect">
+											<select asp-for="AppUser.CategoryId" class="form-select" asp-items="new SelectList(ViewBag.Skill,nameof(Category.Id),nameof(Category.CategoryName))">
+												<option selected>Select</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-start">
+							<button type="submit" class="ud-btn btn-thm" href="#">Save<i class="fal fa-arrow-right-long"></i></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+		<form method="post" asp-action="Education" asp-controller="MyProfile">
+		<div class="ps-widget bgc-white bdrs4 p30 mb30 overflow-hidden position-relative">
+			<div class="bdrb1 pb15 mb30 d-sm-flex justify-content-between">
+				<h5 class="list-title">Education</h5>
+				<a asp-action="CreateEducation" asp-controller="MyProfile" class="add-more-btn text-thm"><i class="icon far fa-plus mr10"></i>Add Education</a>
+			</div>
+			<div class="position-relative">
+				<div class="educational-quality">
+		@foreach(var item in Model.Education)
+		{
+					<div class="m-circle text-thm">M</div>
+					<div class="wrapper mb30 position-relative">
+						<div class="del-edit">
+							<div class="d-flex">
+								<a asp-controller="MyProfile" asp-action="EditEducation" asp-route-id="@item.Id" class="icon me-2" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Edit" aria-label="Edit"><span class="flaticon-pencil"></span></a>
+								<a asp-action="DeleteEducation" asp-controller="MyProfile" class="icon" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Delete" aria-label="Delete" asp-route-id="@item.Id"><span class="flaticon-delete"></span></a>
+							</div>
+						</div>
+						<span class="tag">@item.Time</span>
+						<h5 class="mt15">@item.Name</h5>
+						<h6 class="text-thm">@item.UniversityName</h6>
+						<p>@item.Description</p>
+					</div>
+		}
+				</div>
+			</div>
+		</div>
+		</form>
+		<form method="post" asp-action="Experience" asp-controller="MyProfile">
+		<div class="ps-widget bgc-white bdrs4 p30 mb30 overflow-hidden position-relative">
+			<div class="bdrb1 pb15 mb30 d-sm-flex justify-content-between">
+				<h5 class="list-title">Work & Experience</h5>
+				<a asp-action="CreateExperience" asp-controller="Myprofile" class="add-more-btn text-thm"><i class="icon far fa-plus mr10"></i>Add Experience</a>
+			</div>
+			<div class="position-relative">
+				<div class="educational-quality">
+			@foreach(var item in Model.WorkAndExperience)
+			{
+					<div class="m-circle text-thm">M</div>
+					<div class="wrapper mb40 position-relative">
+						<div class="del-edit">
+							<div class="d-flex">
+									<a asp-controller="MyProfile" asp-action="EditExperience" asp-route-id="@item.Id" class="icon me-2" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Edit" aria-label="Edit"><span class="flaticon-pencil"></span></a>
+									<a asp-controller="MyProfile" asp-action="DeleteExperience" asp-route-id="@item.Id" class="icon" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Delete" aria-label="Delete"><span class="flaticon-delete"></span></a>
+							</div>
+						</div>
+						<span class="tag">@item.Time</span>
+						<h5 class="mt15">@item.Name</h5>
+						<h6 class="text-thm">@item.CompanyName</h6>
+						<p>@item.Description</p>
+					</div>
+			}
+				</div>
+			</div>
+		</div>
+		</form>
+		<div class="ps-widget bgc-white bdrs4 p30 mb30 overflow-hidden position-relative">
+			<div class="bdrb1 pb15 mb30 d-sm-flex justify-content-between">
+				<h5 class="list-title">Awards</h5>
+				<a asp-action="CreateCertificate" class="add-more-btn text-thm"><i class="icon far fa-plus mr10"></i>Add Awards</a>
+			</div>
+			<div class="position-relative">
+				<div class="educational-quality">
+			@foreach(var item in Model.Certificate)
+			{
+						<div class="m-circle text-thm">M</div>
+						<div class="wrapper mb40 position-relative">
+							<div class="del-edit">
+								<div class="d-flex">
+									<a asp-controller="MyProfile" asp-action="EditCertificate" asp-route-id="@item.Id" class="icon me-2" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Edit" aria-label="Edit"><span class="flaticon-pencil"></span></a>
+									<a asp-controller="MyProfile" asp-action="DeleteCertificate" asp-route-id="@item.Id" class="icon" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Delete" aria-label="Delete"><span class="flaticon-delete"></span></a>
+								</div>
+							</div>
+							<span class="tag">@item.Time</span>
+							<h5 class="mt15">@item.Name</h5>
+							<h6 class="text-thm">@item.CompanyName</h6>
+							<p>@item.Description</p>
+						</div>
+
+			}
+				</div>
+		</div>
+		<div class="ps-widget bgc-white bdrs4 p30 mb30 overflow-hidden position-relative">
+			<div class="bdrb1 pb15 mb25">
+				<h5 class="list-title">Change password</h5>
+			</div>
+			<div class="col-lg-7">
+				<div class="row">
+						<form method="post" asp-action="ChangePassword" class="form-style1">
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="mb20">
+										<label class="heading-color ff-heading fw500 mb10">Old Password</label>
+										<input type="password" class="form-control" name="password" placeholder="********">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="mb20">
+										<label class="heading-color ff-heading fw500 mb10">New Password</label>
+										<input type="password" class="form-control" name="newPassword" placeholder="********">
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<div class="mb20">
+										<label class="heading-color ff-heading fw500 mb10">Confirm New Password</label>
+										<input type="password" class="form-control" name="confirmPassword" placeholder="********">
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="text-start">
+										<button type="submit" class="ud-btn btn-thm">Change Password<i class="fal fa-arrow-right-long"></i></button>
+									</div>
+								</div>
+							</div>
+						</form>
+				</div>
+			</div>
+		</div>
+		<div class="ps-widget bgc-white bdrs4 p30 mb30 overflow-hidden position-relative">
+			<div class="col-lg-7">
+				<div class="row">
+					<div class="bdrb1 pb15 mb25">
+						<h5 class="list-title">Delete Profile</h5>
+					</div>
+					<form class="form-style1" asp-action="DeleteProfile">
+						<div class="row">
+							<div class="col-sm-12">
+								<h6>Close account</h6>
+								<p class="text">Warning: If you close your account, you will be unsubscribed from all your 5 courses, and will lose access forever.</p>
+							</div>
+							<div class="col-sm-6">
+								<div class="mb20">
+									<label class="heading-color ff-heading fw500 mb10">Enter Password</label>
+									<input type="text" class="form-control" name="password" placeholder="********">
+								</div>
+								<div class="text-start">
+									<button type="submit" class="ud-btn btn-thm" >Delete Profile<i class="fal fa-arrow-right-long"></i></button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+		</div>

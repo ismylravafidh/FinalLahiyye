@@ -1,0 +1,54 @@
+﻿@using Rafidah.Core.Entities
+
+<!-- EditEducation.cshtml -->
+@model Certificate
+
+<br />
+<br />
+<!-- Breadcumb Sections -->
+<section class="breadcumb-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcumb-style1">
+                    <div class="breadcumb-list">
+                        <a asp-action="Index" asp-controller="Home">Home</a>
+                        <a asp-action="CreateCertificate" asp-controller="MyProfile">Create Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div style="display:flex; justify-content:center;align-items:center" class="container ">
+    <form style="width:60%" method="post">
+        <div style="flex-direction:column; justify-content:center;align-items:center" class="row">
+            <div class="col-12">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="col-12">
+                <label asp-for="CompanyName" class="control-label"></label>
+                <input asp-for="CompanyName" class="form-control" />
+                <span asp-validation-for="CompanyName" class="text-danger"></span>
+            </div>
+            <div class="col-12">
+                <label asp-for="Time" class="control-label"></label>
+                <input asp-for="Time" class="form-control" />
+                <span asp-validation-for="Time" class="text-danger"></span>
+            </div>
+            <div class="col-12">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <!-- Digər inputlar üçün eyni formata uyğun elementləri əlavə edin -->
+            <button style="margin:2rem 0 2rem 0;width:30%;color:white" type="submit" class="btn btn-info">Save</button>
+        </div>
+
+    </form>
+
+
+</div>
+
