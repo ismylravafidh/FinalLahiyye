@@ -17,6 +17,7 @@ namespace Rafidah.DAL
             services.AddScoped<ICityRepository, CityRepository>();
             services.AddScoped<ICountryRepository, CountryRepository>();
             services.AddScoped<IGenderRepository, GenderRepository>();
+            services.AddScoped<ILanguageRepository, LanguageRepository>();
         }
     }
 }

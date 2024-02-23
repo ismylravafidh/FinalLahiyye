@@ -19,7 +19,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ViewModels\Language\" />
     <Folder Include="ViewModels\LanguageLevel\" />
     <Folder Include="ViewModels\HourlyRate\" />
     <Folder Include="ViewModels\Slider\" />

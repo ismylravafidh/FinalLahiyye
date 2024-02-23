@@ -17,6 +17,7 @@ namespace Rafidah.Business
             services.AddScoped<ICityService, CityService>();
             services.AddScoped<ICountryService, CountryService>();
             services.AddScoped<IGenderService, GenderService>();
+            services.AddScoped<ILanguageService, LanguageService>();
         }
     }
 }

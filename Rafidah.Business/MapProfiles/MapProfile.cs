@@ -4,6 +4,7 @@ using Rafidah.Business.ViewModels.Category;
 using Rafidah.Business.ViewModels.City;
 using Rafidah.Business.ViewModels.Country;
 using Rafidah.Business.ViewModels.Gender;
+using Rafidah.Business.ViewModels.Language;
 using Rafidah.Core.Entities;
 using System;
 using System.Collections.Generic;
@@ -40,6 +41,12 @@ namespace Rafidah.Business.MapProfiles
             CreateMap<GenderListVm, Gender>().ReverseMap();
             CreateMap<GenderDetailVm, GenderUpdateVm>().ReverseMap();
             CreateMap<GenderUpdateVm, Gender>().ReverseMap();
+
+            CreateMap<LanguageCreateVm, Language>().ReverseMap();
+            CreateMap<LanguageDetailVm, Language>().ReverseMap();
+            CreateMap<LanguageListVm, Language>().ReverseMap();
+            CreateMap<LanguageDetailVm, LanguageUpdateVm>().ReverseMap();
+            CreateMap<LanguageUpdateVm, Language>().ReverseMap();
 
 
         }
